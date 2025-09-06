@@ -5,7 +5,8 @@
 
 body {
     min-height: 100vh;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+    background-image: url("media/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Courier New', Courier, monospace;
@@ -104,4 +105,33 @@ nav img:hover {
     .sidebar {
         width: 100%;
     }
+}
+
+.photo-container {
+  flex: 1;
+  max-width: 500px;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  /* border-radius: 1rem; */
+  box-shadow: 0 0 20px rgba(241, 241, 241, 0.3);
+}
+
+.photo-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fadeImages 12s infinite;
+  /* border-radius: 1rem; */
+}
+
+.photo-container img:nth-child(2) {
+  animation-delay: 5s;
+}
+
+@keyframes fadeImages {
+  0%, 100% { opacity: 2; }
+  50% { opacity: 0; }
 }
