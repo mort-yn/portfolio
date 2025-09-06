@@ -50,6 +50,18 @@ nav li:first-child {
     margin-right: auto;
 }
 
+nav img {
+    padding: 00 25px;
+    height: 50px;
+    width: auto;
+    border-radius: 50%
+}
+
+nav img:hover {
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
 .sidebar {
     position: fixed;
     top: 0;
