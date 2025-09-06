@@ -6,6 +6,6 @@ function showSidebar() {
 }
 
 function hideSidebar() {
-    let sidebar = document.getElementsByClassName("sidebar");
+    let sidebar = docum  ent.getElementsByClassName("sidebar");
     sidebar[0].style.display = "none";
 } 
